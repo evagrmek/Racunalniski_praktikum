@@ -1,5 +1,5 @@
 % Naslov prosojnice lahko napišemo tudi kot argument okolja `frame`.
-\begin{frame}{Posebnosti prosojnic}
+\begin{frame}{Posebnosti prosojnic}[<+->]
 	% Naloga 2.3.1:
 	% Dodajte ukaze, ki bodo poskrbeli, da se bo prosojnica odkrivala postopoma,
 	% tako kot v datoteki prosojnice-resitev.pdf
@@ -20,12 +20,15 @@
 \begin{frame}{Poudarjeni bloki}
 	% Naloga 2.3.2:
 	% Oblikujte poudarjena bloka z opombo in opozorilom.
-
-		Okolja za poudarjene bloke so \texttt{block}, \texttt{exampleblock} in \texttt{alertblock}.
-
-		Začetek poudarjenega bloka (ukaz \texttt{begin}) vedno sprejme 
-		dva argumenta: okolje in naslov bloka.
-		Drugi argument (za naslov) je lahko prazen. 
+		\begin{block}{Opomba}
+			Okolja za poudarjene bloke so \texttt{block}, \texttt{exampleblock} in \texttt{alertblock}.
+		\end{block}
+		\begin{alertblock}{Pozor!}
+		 Začetek poudarjenega bloka (ukaz \texttt{begin}) vedno sprejme 
+		 dva argumenta: okolje in naslov bloka.
+		 Drugi argument (za naslov) je lahko prazen. 	
+		\end{alertblock}
+		
 
 \end{frame}
 
@@ -42,8 +45,8 @@
 	   Denimo, da je praštevil končno mnogo.
 		% Z neobveznim argumentom [<+->] okolja itemize določimo,
 		% da se elementi naštevanja odkrivajo postopoma.
-	   \begin{itemize}
-		  \item Naj bo \(p\) \alert{največje} praštevilo.
+	   \begin{itemize}[<+->]
+		  \item Naj bo \(p\) \onslide<4->\alert{največje} praštevilo.
 		  \item Naj bo \(q\) produkt števil \(1\), \(2\), \ldots, \(p\).
 		  \item Število \(q+1\) ni deljivo z nobenim praštevilom, torej je \(q+1\) praštevilo.
 		  \item To je protislovje, saj je \(q+1>p\). \qedhere
